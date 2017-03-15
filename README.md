@@ -98,6 +98,10 @@
 - 自定义指令
 	-  ![](https://github.com/jianxiaoBai/vue_note/raw/master/imgs/directive.png)
 
+- 自定义插件
+	- ![](https://github.com/jianxiaoBai/vue_note/raw/master/imgs/zidingyichajian.png)
+
+
 - 自定义元素指令（elementDirective） 用处不大，因为有更靠谱的 vue 组件，此处略过
 
 ## Vue交互
@@ -120,3 +124,59 @@
 
 - 抓取 360 数据
 	- ![](https://github.com/jianxiaoBai/vue_note/raw/master/imgs/360.gif)
+
+
+## 关于组件
+
+ - **全局与局部组件** 
+	 - ![](https://github.com/jianxiaoBai/vue_note/raw/master/imgs/component_1.png)
+
+- **动态组件**
+	- ![](https://github.com/jianxiaoBai/vue_note/raw/master/imgs/component_2.png)
+
+
+- **组件模板的另一种使用方法（常用）**
+	- ![](https://github.com/jianxiaoBai/vue_note/raw/master/imgs/component_3.png)
+
+## 父子组件与非父子组件的数据交互
+
+- **什么是父子组件**
+
+	- vue 中默认 子组件无法直接访问父组件数据
+	- 子组件只能写在父组件的 template 中
+	-  ![](https://github.com/jianxiaoBai/vue_note/raw/master/imgs/father_son.png)
+
+
+----------------------------
+
+- **那么子组件如何才能访问到父组件的数据呢**
+
+	 - 可以通过属性 props 在子组件中定义绑定的指定，然后在子组建中用作为指令值之后，子组件便可访问父组件数据
+	 * props 的值 可以是 数组 可以是 JSON 
+			* props:['m','myMsg']
+			* props:{'m':String,'myMsg':Number}
+	![](https://github.com/jianxiaoBai/vue_note/raw/master/imgs/father_son_1.png)
+
+
+----------------------------
+
+- **那么父组件又如何访问子组件的数据呢**
+	
+	 - 原理就是：子组件主动把自己的数据发送到父级就可以了
+		 - 子级如何发送?
+		 - 父级如何接受?
+	![](https://github.com/jianxiaoBai/vue_note/raw/master/imgs/father_son_2.png)
+
+
+----------------------------
+
+- **那么问题又来了，非父子组件数据如何交互呢？**
+
+	 - ![](https://github.com/jianxiaoBai/vue_note/raw/master/imgs/father_son!.png)
+
+## 生命周期
+
+这些生命周期的函数 就叫 **钩子函数**
+
+![](https://github.com/jianxiaoBai/vue_note/raw/master/imgs/life.png)
+
