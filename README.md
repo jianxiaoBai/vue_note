@@ -33,7 +33,7 @@
 1.  v-on:click="fn( )";
 2.  @click="fn( )"  ` 推荐`
 
-**属性的绑定:**
+**属性绑定的2种方式:**
 
 - v-bind:src=""   （src可写成   width/height/title 等等 ）
 - :src=""    推荐
@@ -86,7 +86,7 @@
 - vm.$options 自定义属性
 	-  ![](https://github.com/jianxiaoBai/vue_note/raw/master/imgs/options.png)
 
-## 关于自定义
+## 关于各项自定义
 
 - 自定义键盘信息
 	- Vue.config.keyCodes.`kkk`=17  ( 自定义 )
@@ -99,3 +99,24 @@
 	-  ![](https://github.com/jianxiaoBai/vue_note/raw/master/imgs/directive.png)
 
 - 自定义元素指令（elementDirective） 用处不大，因为有更靠谱的 vue 组件，此处略过
+
+## Vue交互
+
+**如果vue想做交互：需要引入vue-resouce文件**
+
+- Get 交互
+	- ![](https://github.com/jianxiaoBai/vue_note/raw/master/imgs/get.png)
+
+- Post 交互
+	- ![](https://github.com/jianxiaoBai/vue_note/raw/master/imgs/post.png)
+
+- Jsonp
+	- ![](https://github.com/jianxiaoBai/vue_note/raw/master/imgs/jsonp.png)
+
+如何抓取 Jsonp 数据？
+
+- 抓取 百度 数据
+	- ![](https://github.com/jianxiaoBai/vue_note/raw/master/imgs/baidu.gif)
+
+- 抓取 360 数据
+	- ![](https://github.com/jianxiaoBai/vue_note/raw/master/imgs/360.gif)
