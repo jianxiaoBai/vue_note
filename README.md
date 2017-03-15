@@ -28,6 +28,15 @@
 - 数组
 	- `<li v-for="val in arr"></li> `
 
+**条件渲染**
+
+- v-else 元素必须紧跟在 v-if 或 v-show 元素的后面——否则它不能被识别。
+- 一般来说， v-if 有更高的切换消耗而 v-show 有更高的初始渲染消耗。
+	- 因此，如果需要 **频繁切换使用 v-show **较好，如果在 运行时条件不**大可能改变使用 v-if 较好**。
+
+![](https://github.com/jianxiaoBai/vue_note/raw/master/imgs/tiaojian.png)
+
+
 **绑定事件的2种方式:**
 
 1.  v-on:click="fn( )";
