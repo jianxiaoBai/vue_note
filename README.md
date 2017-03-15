@@ -1,4 +1,4 @@
-##基础使用
+## 基础使用
 
 **class使用方式:**
 
@@ -12,11 +12,11 @@
 **style使用方式:**
 
  - 对象语法
-	 -  <div v-bind:style="{ color: activeColor, fontSize: fontSize + 'px'}><div>
-		 -  data: {activeColor: 'red',fontSize: 30}
-	 -  推荐  <div v-bind:style="styleObject"></div> 
+	 -  `<div v-bind:style="{ color: activeColor, fontSize: fontSize + 'px'}><div>`
+		 -  `data: {activeColor: 'red',fontSize: 30}`
+	 -  推荐  `<div v-bind:style="styleObject"></div> `
 - 数组语法
-	- <div v-bind:style="[styleObjectA, styleObjectB]">
+	- `<div v-bind:style="[styleObjectA, styleObjectB]">`
 
 **循环的用法:**
 
@@ -71,7 +71,7 @@
 1. 此方法一般会用在比较大的段落，也就是段落中 {{ }} 比较多的地方
 	- 在使用花括号的父元素设置 v-cloak 属性
 	- 在样式设置  [v-cloak]{ display: none; }
-2. <span v-html="msg"></span>  `推荐`
+2. `<span v-html="msg"></span>`   `推荐`
 
 
 **一些实例的简单方法**
@@ -81,8 +81,8 @@
 - vm.$destroy  破坏（销毁）对象 
 - vm.$log()    查看现在data对象里面数据的状态
 - vm.$mount 手动安装 （挂载）
-	- ![](https://github.com/jianxiaoBai/vue_note/raw/master/dist/imgs/mount.png)
+	- ![](https://github.com/jianxiaoBai/vue_note/raw/master/imgs/mount.png)
 
 - vm.$options 自定义属性
-	- ![](https://github.com/jianxiaoBai/vue_note/raw/master/dist/imgs/options.png)
+	- ![](https://github.com/jianxiaoBai/vue_note/raw/master/imgs/options.png)
 
