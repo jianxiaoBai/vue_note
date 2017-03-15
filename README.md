@@ -180,3 +180,36 @@
 
 ![](https://github.com/jianxiaoBai/vue_note/raw/master/imgs/life.png)
 
+
+## slot ( 沟槽 )
+
+![](https://github.com/jianxiaoBai/vue_note/raw/master/imgs/slot.png)
+
+## router （路由）
+
+注：此图是 vue 1.0 版本 与vue2.0有略微差异 
+
+- **路由是干啥的？**
+
+1. 能做 SPA 应用（也就是单页面应用）
+2. 能根据不同url地址，显示不同效果
+
+- **关于路由的 hello world**
+
+![](https://github.com/jianxiaoBai/vue_note/raw/master/imgs/router_1.png)
+
+----------------------------
+
+- **路由嵌套  （多层路由）**
+![](https://github.com/jianxiaoBai/vue_note/raw/master/imgs/router_2.png)
+
+----------------------------
+
+- **路由的其他信息的获取**
+![](https://github.com/jianxiaoBai/vue_note/raw/master/imgs/router_3.png)
+
+----------------------------
+
+## 脚手架模板代码执行逻辑
+
+![](https://github.com/jianxiaoBai/vue_note/raw/master/imgs/cli.png)
