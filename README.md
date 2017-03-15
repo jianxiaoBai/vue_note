@@ -23,10 +23,10 @@
 >在循环中添加 <li v-for="val in arr" `:key="$index"`>  提升循环性能
 
 - 对象
-	- <li v-for="(v,k) in obj"></li> 
+	- `<li v-for="(v,k) in obj"></li> `
 
 - 数组
-	- <li v-for="val in arr"></li> 
+	- `<li v-for="val in arr"></li> `
 
 **绑定事件的2种方式:**
 
@@ -81,8 +81,21 @@
 - vm.$destroy  破坏（销毁）对象 
 - vm.$log()    查看现在data对象里面数据的状态
 - vm.$mount 手动安装 （挂载）
-	- ![](https://github.com/jianxiaoBai/vue_note/raw/master/imgs/mount.png)
+	-  ![](https://github.com/jianxiaoBai/vue_note/raw/master/imgs/mount.png)
 
 - vm.$options 自定义属性
-	- ![](https://github.com/jianxiaoBai/vue_note/raw/master/imgs/options.png)
+	-  ![](https://github.com/jianxiaoBai/vue_note/raw/master/imgs/options.png)
 
+## 关于自定义
+
+- 自定义键盘信息
+	- Vue.config.keyCodes.`kkk`=17  ( 自定义 )
+	-` <li @keyup.kkk='add()'></li>`  （调用）
+- 自定义过滤器
+	- 举例：自定义时间过滤器
+	-  ![](https://github.com/jianxiaoBai/vue_note/raw/master/imgs/filter.png)
+
+- 自定义指令
+	-  ![](https://github.com/jianxiaoBai/vue_note/raw/master/imgs/directive.png)
+
+- 自定义元素指令（elementDirective） 用处不大，因为有更靠谱的 vue 组件，此处略过
